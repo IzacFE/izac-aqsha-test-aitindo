@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/8a5d25796a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Izac Aqsha Ghifari Aitindo Test</title>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul class="ulNavbar">
+        <li class="navListEffek">
+          <a href="#">
+            <div class="bottleIcon"></div>
+            LIHAT PRODUK
+          </a>
+        </li>
+        <li class="navListEffek">
+          <a href="#">
+            <div class="manuscriptIcon"></div>
+            TENTANG OBH COMBI
+          </a>
+        </li>
+        <li class="navListEffek">
+          <a href="#">
+            <div class="contactIcon"></div>
+            KONTAK
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="mainBanner">
+        <div class="mainLeft"></div>
+        <div class="mainRight">
+          <p class="textMainTop">Gak semua orang tahu kalau</p>
+          <h1 class="textMain">BATUK ITU<br />BUKAN PENYAKIT</h1>
+          <p class="textMainBot">
+            <span class="mainSpan">Batuk adalah</span> respon alami tubuh untuk
+            melindungi tubuh<br />terhadap benda asing (kuman, bakteri,
+            virus)<br />yang masuk ke dalam tubuh
+          </p>
+        </div>
+      </div>
+
+      <div class="creamBackground">
+        <div class="shadowBrown">
+          <div class="explainBanner skew1">
+            <div class="wrapper">
+              <section class="section1 reveal">
+                <p class="textExplainTop">terdapat</p>
+                <h1 class="textExplain">2 JENIS<br />BATUK</h1>
+                <p class="textExplainBot">
+                  yaitu batuk berdahak<br />dan batuk tid<span
+                    class="botIntroLine"
+                    >ak berdahak</span
+                  >
+                </p>
+              </section>
+
+              <div class="containerRight">
+                <section class="section2 reveal">
+                  <h3>BATUK TIDAK BERDAHAK</h3>
+                  <p>
+                    disebabkan oleh<br />terjadinya kejang pada<br />saluran
+                    pernapasan<br />menjadi respon terhadap<br />iritasi di
+                    tenggorokan
+                  </p>
+                </section>
+
+                <section class="section3 reveal">
+                  <h3>BATUK BERDAHAK</h3>
+                  <p>
+                    disebabkan karena membran<br />
+                    yang melapisi saluran pernapasan<br />
+                    menghasilkan dahak yang berlebih<br />
+                    sehingga harus dikeluarkan<br />
+                    oleh tubuh. Terkadang dahak<br />
+                    sulit dikeluarkan oleh tubuh<br />
+                    sehingga dibutuhkan obat batuk<br />
+                    yang bersifat ekspektoran.
+                  </p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="ingredientBanner">
+            <div class="arrowContainer">
+              <label for="more" class="btnMore">
+                <i class="fa-solid fa-angles-down bottomArrow"></i
+              ></label>
+            </div>
+
+            <div class="bgLeafes reveal">
+              <img src="./assets/leaf1.png" alt="leaf1" id="leaf1" />
+              <img src="./assets/leaf2.png" alt="leaf2" id="leaf2" />
+              <img src="./assets/leaf3.png" alt="leaf3" id="leaf3" />
+            </div>
+
+            <div class="ingredientContainer">
+              <section class="ingredientLeft">
+                <h1>SUCCUS<br />LIQURITI<span class="ingreLine">AE</span></h1>
+                <p>
+                  merupakan salah satu bahan alami<br />yang telah dibudidayakan
+                  sejak abad ke-13 dan<br />dipercaya serta digunakan sebagai<br />bahan
+                  dasar obat-obatan alami maupun modern.
+                </p>
+              </section>
+
+              <section class="ingredientRight">
+                <div class="mainLeaf"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (let i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var revealTop = reveals[i].getBoundingClientRect().top;
+          var revealPoint = 80;
+
+          if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
